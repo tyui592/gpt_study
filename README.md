@@ -36,3 +36,6 @@ Result
 * Input: lily went to the store and bought a new toy.
 * Output: lily went to the store and bought a new toy . she was so happy and could n't wait to play with it . but when she got home , she saw that her toy was missing . she looked everywhere but could n't find it . lily was sad and did n't know what to do . she asked her mom for help , but her mom did n't know how to fix it . lily was very sad and did n't know what to do . she went to her room and cried . her mom came in and asked what was wrong . lily told her about her missing toy . her mom said , " do n't worry , we can fix it together . " they worked together and lily was able to find her toy . she was so happy again . she hugged her mom was so happy again . lily was so happy again . she was so glad that she was n't have to be sad . from now . she was n't have to lose her toy . she was n't have to lose it . lily . she was so sad . she was so sad . her mom was so sad . her mom was so sad . her mom was so sad . her mom was so sad . her mom was so sad . she was so sad . her mom was so sad . her mom was so sad . she
 * Please check the [notebook](./TextGeneration.ipynb)
+
+# To Do
+* [ ] Since the frequency of SOT token or EOT token is very low, put more weights on special tokens.
