@@ -66,7 +66,12 @@ def train_model(args):
                                   betas=args.lr_betas,
                                   weight_decay=args.weight_decay,
                                   eps=1e-9)
-    criterion = torch.nn.CrossEntropyLoss(label_smoothing=args.label_smoothing)
+    class_weights = None
+    if args.sp_weight is not None:
+        class_weights = torch.ones(args.vocab_size, dtype=torch.float32).to(device)
+        class_weights[1:3] = args.sp_weight
+    criterion = torch.nn.CrossEntropyLoss(weight=class_weights,
+                                          label_smoothing=args.label_smoothing)
 
     best_valid_loss = float('inf')
     for epoch in range(args.epoch):

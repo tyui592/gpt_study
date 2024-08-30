@@ -39,6 +39,10 @@ def build_parser():
                         type=float,
                         default=0.1)
 
+    parser.add_argument('--sp_weight',
+                        type=float,
+                        default=None)
+
     parser.add_argument('--weight_decay',
                         type=float,
                         default=5e-4)
